@@ -36,3 +36,5 @@ conferences = [
     ]
 def conferences_view(request):
     return render(request, 'conferences.html', context={"conferences": conferences})
+def create_conference_view(request):
+    return render (request,'create_conf.html')
