@@ -9,6 +9,8 @@
 # Local History for Visual Studio Code
 .history/
 
+sandrine_venv/
+
 # Built Visual Studio Code Extensions
 *.vsix
 
