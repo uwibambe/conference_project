@@ -1,6 +1,6 @@
 from django.shortcuts import render
 
-conferences = [
+speakers = [
         {
             "id": 'A',
             "name": "INFORMATION TECHNOLOGY",
@@ -34,13 +34,16 @@ conferences = [
             "location": "kigali"
         },
     ]
-def conferences_view(request):
-    return render(request, 'conferences.html', context={"conferences": conferences})
-def create_conference_view(request):
-    return render (request,'create_conf.html')
+def speaker_view(request):
+    return render(request, 'speaker.html', context={"speaker": speakers})
+def create_speaker_view(request):
+    return render (request,'create_speak.html')
 
-def conference_id(request,id):
-    return render(request,'conference_id.html')
+def speaker_id(request,id):
+    return render(request,'speaker_id.html')
 
-def conference_update(request,update):
-    return render(request, 'conference_update.html')
+def speaker_update(request,update):
+    return render(request, 'speaker_update.html')
+
+def speaker_delete(request,speaker_id):
+    return render (request, 'speaker_delete.html')
